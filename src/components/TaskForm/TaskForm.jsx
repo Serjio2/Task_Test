@@ -1,3 +1,6 @@
+import { Button } from "components/Button/Buton";
+import { TaskFormStyled } from "./TaskForm.styled";
+
 export const TaskForm = () => {
   const handleSubmit = event => {
     event.preventDefault();
@@ -6,13 +9,13 @@ export const TaskForm = () => {
     form.reset()
   };
   return (
-    <form onSubmit={handleSubmit}>
+    <TaskFormStyled onSubmit={handleSubmit}>
       <input
         type="text"
         name="text"
         placeholder="Enter task text ..."
       />
-      <button type="submit">Add task</button>
-    </form>
+      <Button type="submit">Add task</Button>
+    </TaskFormStyled>
   );
 };

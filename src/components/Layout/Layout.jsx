@@ -1,5 +1,6 @@
+import { StyledLayout } from "./Layout.styled"
 
 
 export const Layout = ({children}) => {
-    return <main>{children}</main>
+    return <StyledLayout>{children}</StyledLayout>
 }
