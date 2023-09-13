@@ -1,7 +1,7 @@
 import { Button } from 'components/Button/Button';
 import { useDispatch, useSelector } from 'react-redux';
-import { setStatusFilter } from 'redux/actions';
 import { statusFilters } from 'redux/constants';
+import { setStatusFilter } from 'redux/filtersSlice';
 import { getStatusFilter } from 'redux/selectors';
 
 export const StatusFilter = () => {
